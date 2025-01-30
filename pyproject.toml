@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "soundpadrc"
-version = "0.0.8"
+version = "0.3.0"
 authors = [{ name = "r4b2", email = "pypi@r4b2.de" }]
 description = "Control Soundpad with Python"
 readme = "README.md"
