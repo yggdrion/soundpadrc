@@ -94,4 +94,4 @@ class Soundpad:
             return file.read().strip()
 
     def query_play(self, id: str) -> None:
-        self.query_id_get(self.sound_play(id))
+        self.sound_play(id)
