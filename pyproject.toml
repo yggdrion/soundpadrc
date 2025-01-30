@@ -3,10 +3,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "example_package_r4b2"
-version = "0.0.2"
+name = "soundpadrc"
+version = "0.0.3"
 authors = [{ name = "r4b2", email = "pypi@r4b2.de" }]
-description = "A small example package"
+description = "Control Soundpad with Python"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
