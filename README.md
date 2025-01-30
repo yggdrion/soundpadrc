@@ -1,6 +1,6 @@
 # soundpadrc
 
-test3
+test4
 
 # example:
 
