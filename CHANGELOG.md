@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.3 (2025-01-30)
+
+### Bug Fixes
+
+- Hash
+  ([`3d7c65f`](https://github.com/yggdrion/soundpadrc/commit/3d7c65fc8e0f30bfc9b68b61cac81bd7662eb700))
+
+
 ## v0.1.2 (2025-01-30)
 
 
