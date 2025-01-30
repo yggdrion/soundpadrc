@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "soundpadrc"
-version = "0.0.6"
+version = "0.0.7"
 authors = [{ name = "r4b2", email = "pypi@r4b2.de" }]
 description = "Control Soundpad with Python"
 readme = "README.md"
@@ -12,6 +12,9 @@ requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: Microsoft :: Windows",
+]
+dependencies = [
+    "xmltodict"
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
