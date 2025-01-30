@@ -1,53 +1,66 @@
-name: Continuous Delivery
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# GitHub recommends pinning actions to a commit SHA.
+# To get a newer version, you will need to update the SHA.
+# You can also reference a tag or branch, but the action may change without warning.
+
+name: Upload Python Package
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
+
+permissions:
+  contents: read
 
 jobs:
-  release:
+  release-build:
     runs-on: ubuntu-latest
-    concurrency: release
-
-    environment:
-      name: pypi
-      url: https://test.pypi.org/project/soundpadrc/#description
-
-    permissions:
-      id-token: write
-      contents: write
 
     steps:
-      # Note: we need to checkout the repository at the workflow sha in case during the workflow
-      # the branch was updated. To keep PSR working with the configured release branches,
-      # we force a checkout of the desired release branch but at the workflow sha HEAD.
-      - name: Setup | Checkout Repository at workflow sha
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.sha }}
+      - uses: actions/checkout@v4
 
-      - name: Setup | Force correct release branch on workflow sha
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Build release distributions
         run: |
-          git checkout -B ${{ github.ref_name }} ${{ github.sha }}
+          # NOTE: put your own distribution build steps here.
+          python -m pip install build
+          python -m build
 
-      - name: Action | Semantic Version Release
-        id: release
-        # Adjust tag with desired version if applicable.
-        uses: python-semantic-release/python-semantic-release@v9.17.0
+      - name: Upload distributions
+        uses: actions/upload-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          git_committer_name: "github-actions"
-          git_committer_email: "actions@users.noreply.github.com"
+          name: release-dists
+          path: dist/
 
-      - name: Publish | Upload package to PyPI
-        uses: pypa/gh-action-pypi-publish@76f52bc884231f62b9a034ebfe128415bbaabdfc
-        if: steps.release.outputs.released == 'true'
+  pypi-publish:
+    runs-on: ubuntu-latest
 
-      - name: Publish | Upload to GitHub Release Assets
-        uses: python-semantic-release/publish-action@v9.17.0
-        if: steps.release.outputs.released == 'true'
+    needs:
+      - release-build
+
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+
+    # Dedicated environments with protections for publishing are strongly recommended.
+    environment:
+      name: pypi
+      # OPTIONAL: uncomment and update to include your PyPI project URL in the deployment status:
+      # url: https://pypi.org/p/YOURPROJECT
+
+    steps:
+      - name: Retrieve release distributions
+        uses: actions/download-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.release.outputs.tag }}
+          name: release-dists
+          path: dist/
+
+      - name: Publish release distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@6f7e8d9c0b1a2c3d4e5f6a7b8c9d0e1f2a3b4c5d
