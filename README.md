@@ -1,5 +1,16 @@
 # soundpadrc
 
+# example:
+
+```python
+from soundpadrc import Soundpad
+
+sp = Soundpad()
+
+print(sp.categories())
+
+```
+
 #
 
 https://github.com/Ilya-Kokhanovsky/soundpad.py
