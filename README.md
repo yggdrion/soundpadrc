@@ -2,6 +2,10 @@
 
 test11
 
+# todo
+always tag and push to test.pypi.org
+if release generate changelog + push to pypi?
+
 # example:
 
 ```python
