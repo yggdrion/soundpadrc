@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.8.0 (2025-02-01)
+
+### Features
+
+- Test111
+  ([`187aeeb`](https://github.com/yggdrion/soundpadrc/commit/187aeeb54b67ff035ec030257c74dc23c71d3f2f))
+
+
 ## v0.7.0 (2025-02-01)
 
 ### Features
