@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.12.1 (2025-02-01)
+
+### Bug Fixes
+
+- Tag
+  ([`03a2020`](https://github.com/yggdrion/soundpadrc/commit/03a2020a5c2f993437b6f3f88b06c1b843e9d5d0))
+
+
 ## v0.12.0 (2025-02-01)
 
 ### Features
