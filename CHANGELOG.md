@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.10.1 (2025-02-01)
+
+### Bug Fixes
+
+- Add pr linter
+  ([`590e89a`](https://github.com/yggdrion/soundpadrc/commit/590e89abf4c545104cd2b6448034b709740788b0))
+
+
 ## v0.10.0 (2025-02-01)
 
 ### Features
