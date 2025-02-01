@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.4.0 (2025-02-01)
+
+### Features
+
+- Test44
+  ([`ccfe441`](https://github.com/yggdrion/soundpadrc/commit/ccfe441bc665faf22accf28a581392a318c4aa3c))
+
+
 ## v0.3.1 (2025-02-01)
 
 ### Bug Fixes
