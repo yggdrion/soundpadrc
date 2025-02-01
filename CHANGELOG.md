@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.5.0 (2025-02-01)
+
+### Features
+
+- Ttt
+  ([`df62f6c`](https://github.com/yggdrion/soundpadrc/commit/df62f6cba200cd953f572130acc947f8646a8022))
+
+
 ## v0.4.0 (2025-02-01)
 
 ### Features
