@@ -1,9 +1,12 @@
 name: Continuous Delivery
 
+# on:
+#     push:
+#         branches:
+#             - main
+
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   release:
@@ -37,13 +40,13 @@ jobs:
           git_committer_name: "github-actions"
           git_committer_email: "actions@users.noreply.github.com"
 
-      - name: Publish | Upload package to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        if: steps.release.outputs.released == 'true'
+      # - name: Publish | Upload package to PyPI
+      #   uses: pypa/gh-action-pypi-publish@release/v1
+      #   if: steps.release.outputs.released == 'true'
 
-      - name: Publish | Upload to GitHub Release Assets
-        uses: python-semantic-release/publish-action@v9.17.0
-        if: steps.release.outputs.released == 'true'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.release.outputs.tag }}
+      # - name: Publish | Upload to GitHub Release Assets
+      #   uses: python-semantic-release/publish-action@v9.17.0
+      #   if: steps.release.outputs.released == 'true'
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     tag: ${{ steps.release.outputs.tag }}
