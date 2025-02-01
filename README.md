@@ -1,6 +1,6 @@
 # soundpadrc
 
-test1111
+test2
 
 ## todo
 
