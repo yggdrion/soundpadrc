@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.1 (2025-02-01)
+
+### Bug Fixes
+
+- Name
+  ([`08ab0ef`](https://github.com/yggdrion/soundpadrc/commit/08ab0efd7dbd98aee7904a469b6c71e5abd24008))
+
+
 ## v0.1.0 (2025-02-01)
 
 ### Bug Fixes
