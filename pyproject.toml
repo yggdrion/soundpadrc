@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 source = "vcs"
 
 [project]
-name = "soundpadrc2"
+name = "soundpadrc"
 # version = "0.5.0"
 dynamic = ["version"]
 authors = [{ name = "r4b2", email = "pypi@r4b2.de" }]
