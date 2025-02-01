@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.6.0 (2025-02-01)
+
+### Features
+
+- Add tag
+  ([`278749a`](https://github.com/yggdrion/soundpadrc/commit/278749ac582ca1bebd98bde63c9a83f11670fc01))
+
+
 ## v0.5.0 (2025-02-01)
 
 ### Features
