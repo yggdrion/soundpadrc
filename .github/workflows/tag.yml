@@ -1,3 +1,5 @@
+name: Semver Tag
+
 on:
   push:
     branches: ["main"]
