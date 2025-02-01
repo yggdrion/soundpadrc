@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.11.0 (2025-02-01)
+
+### Features
+
+- Dependabot ([#1](https://github.com/yggdrion/soundpadrc/pull/1),
+  [`b7493e7`](https://github.com/yggdrion/soundpadrc/commit/b7493e7c39db3349947252830014186c8630d5d2))
+
+
 ## v0.10.1 (2025-02-01)
 
 ### Bug Fixes
