@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.9.0 (2025-02-01)
+
+### Features
+
+- Test1111
+  ([`42bd5d1`](https://github.com/yggdrion/soundpadrc/commit/42bd5d1a1431f92aa0acbfcd1d7b2da5fbebbd27))
+
+
 ## v0.8.0 (2025-02-01)
 
 ### Features
