@@ -18,4 +18,4 @@ jobs:
           versionSpec: "6.0.x"
       - name: Get the version
         id: vars
-        run: echo ::set-output name=version::$(GitVersion /output json)
+        run: echo ::set-output name=version::$(gitversion /output json)
