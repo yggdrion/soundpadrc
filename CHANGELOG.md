@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.3 (2025-02-01)
+
+### Bug Fixes
+
+- Verbose
+  ([`b488dfe`](https://github.com/yggdrion/soundpadrc/commit/b488dfe9eaf70d53a493f067d5748746865e89ad))
+
+
 ## v0.1.2 (2025-02-01)
 
 ### Bug Fixes
