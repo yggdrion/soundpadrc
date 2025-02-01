@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.7.0 (2025-02-01)
+
+### Features
+
+- Trawd
+  ([`d1309cc`](https://github.com/yggdrion/soundpadrc/commit/d1309ccd5c9141b5cc0ef4e6d64b19fc07648d8b))
+
+
 ## v0.6.0 (2025-02-01)
 
 ### Features
