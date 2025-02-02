@@ -1,6 +1,6 @@
 # soundpadrc
 
-test2
+test22
 
 ## todo
 
@@ -17,14 +17,14 @@ from soundpadrc import Soundpad
 
 sp = Soundpad()
 
-
+print(sp.categories())
 
 ```
+
+```powershell
+
 git tag -l | ForEach-Object { git tag -d $_ }
 git tag -l | ForEach-Object { git push --delete origin $_ }
-```
-
-print(sp.categories())
 
 ```
 
