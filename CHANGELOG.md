@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.18.1-rc.3 (2025-02-02)
+
+### Bug Fixes
+
+- Rever tag
+  ([`94a6913`](https://github.com/yggdrion/soundpadrc/commit/94a6913a4c83c10e5af5616348eff6b7219f9377))
+
+- Test without tag
+  ([`27ab167`](https://github.com/yggdrion/soundpadrc/commit/27ab167e754d5fbceeb64def096d4e186efc434f))
+
+
 ## v0.18.1-rc.2 (2025-02-02)
 
 ### Bug Fixes
