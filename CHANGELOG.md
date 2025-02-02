@@ -1,36 +1,18 @@
 # CHANGELOG
 
 
-## v0.1.3 (2025-02-01)
-
-### Bug Fixes
-
-- Verbose
-  ([`b488dfe`](https://github.com/yggdrion/soundpadrc/commit/b488dfe9eaf70d53a493f067d5748746865e89ad))
-
-
-## v0.1.2 (2025-02-01)
-
-### Bug Fixes
-
-- Back to soundpadrc
-  ([`d61f3e2`](https://github.com/yggdrion/soundpadrc/commit/d61f3e2b54d798a4bd88ef8840b169b0c303dbdf))
-
-
-## v0.1.1 (2025-02-01)
-
-### Bug Fixes
-
-- Name
-  ([`08ab0ef`](https://github.com/yggdrion/soundpadrc/commit/08ab0efd7dbd98aee7904a469b6c71e5abd24008))
-
-
-## v0.1.0 (2025-02-01)
+## v0.1.0 (2025-02-02)
 
 ### Bug Fixes
 
 - Add pr linter
   ([`590e89a`](https://github.com/yggdrion/soundpadrc/commit/590e89abf4c545104cd2b6448034b709740788b0))
+
+- Back to soundpadrc
+  ([`d61f3e2`](https://github.com/yggdrion/soundpadrc/commit/d61f3e2b54d798a4bd88ef8840b169b0c303dbdf))
+
+- Cleanup
+  ([`c595464`](https://github.com/yggdrion/soundpadrc/commit/c595464d353d17736aef6e8bde4a62bfe31a8354))
 
 - Fix
   ([`58b060e`](https://github.com/yggdrion/soundpadrc/commit/58b060e56ce2a4ec2f28c1491fe35bf2495b3cba))
@@ -47,11 +29,23 @@
 - Hash
   ([`3d7c65f`](https://github.com/yggdrion/soundpadrc/commit/3d7c65fc8e0f30bfc9b68b61cac81bd7662eb700))
 
+- Name
+  ([`08ab0ef`](https://github.com/yggdrion/soundpadrc/commit/08ab0efd7dbd98aee7904a469b6c71e5abd24008))
+
+- New tagger
+  ([`d7ec5be`](https://github.com/yggdrion/soundpadrc/commit/d7ec5be6b07d6c2c5cdbc848dd99a32777c51933))
+
 - New workflow
   ([`fda9126`](https://github.com/yggdrion/soundpadrc/commit/fda91264846170e4b82c48ddd05409cb00bc1b8b))
 
+- Old tagging
+  ([`9132114`](https://github.com/yggdrion/soundpadrc/commit/913211494d066fbe92811a181c3fcf912ed1b2fd))
+
 - Readme.md
   ([`b21e129`](https://github.com/yggdrion/soundpadrc/commit/b21e1296b4c37b69ead1f390e444a8f21ceace96))
+
+- Setuptools
+  ([`36bc17f`](https://github.com/yggdrion/soundpadrc/commit/36bc17f2bcfad3d2d46ea1def2e3779e19523de4))
 
 - Tag
   ([`03a2020`](https://github.com/yggdrion/soundpadrc/commit/03a2020a5c2f993437b6f3f88b06c1b843e9d5d0))
@@ -88,6 +82,15 @@
 
 - Testee
   ([`c0bdf0c`](https://github.com/yggdrion/soundpadrc/commit/c0bdf0c652843f7b3e2a727d1de756146496b28d))
+
+- Verbose
+  ([`b488dfe`](https://github.com/yggdrion/soundpadrc/commit/b488dfe9eaf70d53a493f067d5748746865e89ad))
+
+- Wip
+  ([`aa1854a`](https://github.com/yggdrion/soundpadrc/commit/aa1854a5b016f2f237ee32c20527571e03d44211))
+
+- Wip
+  ([`e70160f`](https://github.com/yggdrion/soundpadrc/commit/e70160f5abf9bb6eab9ea2f58e03c57dad920f2e))
 
 - Wip123
   ([`3bbc116`](https://github.com/yggdrion/soundpadrc/commit/3bbc11618bd8de7ff7674909b4b230b070b073dd))
