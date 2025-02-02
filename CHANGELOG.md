@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.16.0 (2025-02-02)
+
+### Features
+
+- Test pypi
+  ([`26f1d7a`](https://github.com/yggdrion/soundpadrc/commit/26f1d7a74dac1c8cc98aa03df3353b1b937114be))
+
+
 ## v0.15.2 (2025-02-02)
 
 ### Bug Fixes
