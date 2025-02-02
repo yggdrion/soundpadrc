@@ -6,38 +6,9 @@ on:
       - main
 
 jobs:
-  tag:
-    name: Tag the release 🏷️
-    runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write
-      contents: write
-
-    steps:
-      - name: Setup | Checkout Repository at workflow sha
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.sha }}
-      - name: Retrieve all tags
-        run: git fetch --tags
-      - name: Setup | Force correct release branch on workflow sha
-        run: |
-          git checkout -B ${{ github.ref_name }} ${{ github.sha }}
-      - name: Action | Semantic Version Release
-        id: release
-        uses: python-semantic-release/python-semantic-release@v9.17.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          git_committer_name: "github-actions"
-          git_committer_email: "actions@users.noreply.github.com"
-          prerelease: true
-
   build:
     name: Build distribution 📦
     runs-on: ubuntu-latest
-    needs: [tag]
 
     steps:
       - uses: actions/checkout@v4
