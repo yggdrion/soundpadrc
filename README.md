@@ -17,6 +17,13 @@ from soundpadrc import Soundpad
 
 sp = Soundpad()
 
+
+
+```
+git tag -l | ForEach-Object { git tag -d $_ }
+git tag -l | ForEach-Object { git push --delete origin $_ }
+```
+
 print(sp.categories())
 
 ```
