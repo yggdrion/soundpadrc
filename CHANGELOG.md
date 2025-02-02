@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.18.1-rc.2 (2025-02-02)
+
+### Bug Fixes
+
+- Test pre
+  ([`0d6c2f0`](https://github.com/yggdrion/soundpadrc/commit/0d6c2f09d0de4447d7439761a22ecca62ebd104d))
+
+
 ## v0.18.1-rc.1 (2025-02-02)
 
 ### Bug Fixes
