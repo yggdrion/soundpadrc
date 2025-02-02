@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.15.2 (2025-02-02)
+
+### Bug Fixes
+
+- Some smaller actions
+  ([`e349e41`](https://github.com/yggdrion/soundpadrc/commit/e349e41e9e15896b51b2b0cb6bb571809b10cef4))
+
+
 ## v0.15.1 (2025-02-02)
 
 ### Bug Fixes
