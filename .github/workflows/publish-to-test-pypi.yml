@@ -64,9 +64,9 @@ jobs:
           pip install
           build
           --user
-      - name: print git tag
-        run: git tag
-      - name: git infos
+      - name: git tag list
+        run: git tag --list
+      - name: git status
         run: git status
       - name: git pull
         run: git pull
