@@ -1,6 +1,33 @@
 # CHANGELOG
 
 
+## v0.18.1-rc.1 (2025-02-02)
+
+### Bug Fixes
+
+- Test pre
+  ([`f688866`](https://github.com/yggdrion/soundpadrc/commit/f688866e4ef7bd04ad0eac6d804fa75e7fddd870))
+
+
+## v0.18.0 (2025-02-02)
+
+### Bug Fixes
+
+- Test1
+  ([`7a592d0`](https://github.com/yggdrion/soundpadrc/commit/7a592d09f753092b9392b121148948a48bed8c5c))
+
+- Test111
+  ([`592addb`](https://github.com/yggdrion/soundpadrc/commit/592addb8bb2017e4eb8707dcb1b241e434bbb98c))
+
+
+## v0.17.0 (2025-02-02)
+
+### Bug Fixes
+
+- New tagging
+  ([`78f76f1`](https://github.com/yggdrion/soundpadrc/commit/78f76f1c7f34c5f537b4b6a4654cd6f08d5f934e))
+
+
 ## v0.16.1 (2025-02-02)
 
 ### Bug Fixes
