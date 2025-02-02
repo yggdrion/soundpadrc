@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
-## v0.1.0 (2025-02-02)
+## v0.14.1 (2025-02-02)
+
+### Bug Fixes
+
+- Wip
+  ([`326ddec`](https://github.com/yggdrion/soundpadrc/commit/326ddec96356d8e100b3ad4bc65b8a2184b8cc12))
+
+
+## v0.14.0 (2025-02-02)
 
 ### Bug Fixes
 
