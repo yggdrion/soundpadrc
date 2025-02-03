@@ -34,7 +34,8 @@ class Soundpad:
             if self.pipe:
                 self.pipe.write(command.encode())
                 self.pipe.seek(0)
-                data = self.pipe.read(16384)
+                # FIXME: use chucks or something here
+                data = self.pipe.read(65536)
                 self.pipe.seek(0)
                 return data
             else:
@@ -99,3 +100,15 @@ class Soundpad:
 
     def query_play(self, id: str) -> None:
         self.sound_play(id)
+
+    def get_all_sounds(self) -> dict:
+        data = self.send_command("GetSoundlist()")
+        if not data:
+            return {}
+        my_xml = data.decode("utf-8")
+        print(my_xml)
+        my_dict = xmltodict.parse(my_xml)
+        sound_dict = {}
+        for sound in my_dict["Soundlist"]["Sound"]:
+            sound_dict[sound["@index"]] = sound["@title"]
+        return sound_dict
