@@ -49,23 +49,23 @@ class Soundpad:
         data = self.send_command("GetCategories(false, false)")
         if not data:
             return json.dumps([])
-        cat_dict = {}
-        myxml = fromstring(data)
-        for cat in myxml:
+        category_dict = {}
+        xml_data = fromstring(data)
+        for cat in xml_data:
             if "All sounds" not in cat.attrib["name"]:
-                cat_dict[cat.attrib["index"]] = cat.attrib["name"]
-        return cat_dict
+                category_dict[cat.attrib["index"]] = cat.attrib["name"]
+        return category_dict
 
     def category_sounds(self, category_id) -> dict:
         data = self.send_command(f"GetCategory({category_id},true,false)")
         if not data:
             return {}
-        my_xml = data.decode("utf-8")
-        my_dict = xmltodict.parse(my_xml)
-        sound_dict = {}
-        for sound in my_dict["Categories"]["Category"]["Sound"]:
-            sound_dict[sound["@index"]] = sound["@title"]
-        return sound_dict
+        xml_data = data.decode("utf-8")
+        xml_dict = xmltodict.parse(xml_data)
+        sounds = {}
+        for sound in xml_dict["Categories"]["Category"]["Sound"]:
+            sounds[sound["@index"]] = sound["@title"]
+        return sounds
 
     def sound_play(self, sound_id):
         self.send_command(f"DoPlaySound({sound_id})")
@@ -105,10 +105,9 @@ class Soundpad:
         data = self.send_command("GetSoundlist()")
         if not data:
             return {}
-        my_xml = data.decode("utf-8")
-        print(my_xml)
-        my_dict = xmltodict.parse(my_xml)
-        sound_dict = {}
-        for sound in my_dict["Soundlist"]["Sound"]:
-            sound_dict[sound["@index"]] = sound["@title"]
-        return sound_dict
+        xml_data = data.decode("utf-8")
+        xml_dict = xmltodict.parse(xml_data)
+        sounds = {}
+        for sound in xml_dict["Soundlist"]["Sound"]:
+            sounds[sound["@index"]] = sound["@title"]
+        return sounds
