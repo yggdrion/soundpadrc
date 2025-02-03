@@ -1,6 +1,53 @@
 # CHANGELOG
 
 
+## v0.18.3 (2025-02-03)
+
+
+## v0.18.3-rc.5 (2025-02-03)
+
+### Bug Fixes
+
+- Workflow name
+  ([`f509d91`](https://github.com/yggdrion/soundpadrc/commit/f509d91c7e5064862031774b1d0e0af78f084d6f))
+
+
+## v0.18.3-rc.4 (2025-02-03)
+
+### Bug Fixes
+
+- Readme.md
+  ([`3fa2d4c`](https://github.com/yggdrion/soundpadrc/commit/3fa2d4c76267356e2928e7533cff4ca06a0067b7))
+
+
+## v0.18.3-rc.3 (2025-02-03)
+
+### Bug Fixes
+
+- Concurrency
+  ([`4682444`](https://github.com/yggdrion/soundpadrc/commit/46824441b881362a2b6815dcc3025429eadd9615))
+
+
+## v0.18.3-rc.2 (2025-02-03)
+
+### Bug Fixes
+
+- Github actions hashes ([#3](https://github.com/yggdrion/soundpadrc/pull/3),
+  [`dbb062c`](https://github.com/yggdrion/soundpadrc/commit/dbb062cce3d7755633afdbcf63ad8253b0f1c404))
+
+* fix: README.md
+
+* fi github actions
+
+
+## v0.18.3-rc.1 (2025-02-03)
+
+### Bug Fixes
+
+- Readme.md ([#2](https://github.com/yggdrion/soundpadrc/pull/2),
+  [`50e2d6f`](https://github.com/yggdrion/soundpadrc/commit/50e2d6f13d9ef69b9d6013507579f1a918af327e))
+
+
 ## v0.18.2 (2025-02-03)
 
 
