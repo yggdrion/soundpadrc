@@ -6,7 +6,7 @@ on:
       - main
 
 concurrency:
-  group: publish-test-${{ github.ref_name }}
+  group: publish-test
   cancel-in-progress: false
 
 jobs:
