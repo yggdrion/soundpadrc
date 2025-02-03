@@ -67,7 +67,7 @@ class Soundpad:
         """
         data = self.send_command("GetCategories(false, false)")
         if not data:
-            return json.dumps([])
+            return {}
         category_dict = {}
         xml_data = fromstring(data)
         for cat in xml_data:
