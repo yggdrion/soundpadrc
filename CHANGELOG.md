@@ -1,7 +1,29 @@
 # CHANGELOG
 
 
+## v0.18.2 (2025-02-03)
+
+
+## v0.18.2-rc.2 (2025-02-03)
+
+### Bug Fixes
+
+- Concurrency
+  ([`0a9d941`](https://github.com/yggdrion/soundpadrc/commit/0a9d941a267e724394d804717736b965716f14ab))
+
+
+## v0.18.2-rc.1 (2025-02-03)
+
+### Bug Fixes
+
+- Workflow runs
+  ([`4cc0be8`](https://github.com/yggdrion/soundpadrc/commit/4cc0be806a7408a3aa40835ff6888ad6e6cd8996))
+
+
 ## v0.18.1 (2025-02-03)
+
+
+## v0.18.1-rc.5 (2025-02-03)
 
 ### Bug Fixes
 
