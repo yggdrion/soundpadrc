@@ -1,7 +1,11 @@
-name: Tag 🏷️, Build 📦 and Pusblish to test.pypi.org 🐍
+name: Tag 🏷️, Build 📦 and Pusblish - pypi.org 🐍
 
 on:
   workflow_dispatch:
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
 
 jobs:
   tag:
