@@ -1,4 +1,4 @@
-name: Tag 🏷️, Build 📦 and Publish - test.pypi.org 🐍
+name: "🛠️ test.pypi.org"
 
 on:
   push:

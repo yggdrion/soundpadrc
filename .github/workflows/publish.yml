@@ -1,4 +1,4 @@
-name: Tag 🏷️, Build 📦 and Publish - pypi.org 🐍
+name: "🚀 pypi.org"
 
 on:
   workflow_dispatch:
