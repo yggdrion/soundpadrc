@@ -12,6 +12,12 @@ To install soundpadrc from PyPI:
 pip install soundpadrc
 ```
 
+To install release candidate versions:
+
+```bash
+pip install --pre --upgrade -i https://test.pypi.org/simple/ soundpadrc
+```
+
 ## Example Usage
 
 ```python
