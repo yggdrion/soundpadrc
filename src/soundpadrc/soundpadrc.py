@@ -31,11 +31,15 @@ class Soundpad:
     def send_command(self, command):
         self._init_connection()
         try:
-            self.pipe.write(command.encode())
-            self.pipe.seek(0)
-            data = self.pipe.read(16384)
-            self.pipe.seek(0)
-            return data
+            if self.pipe:
+                self.pipe.write(command.encode())
+                self.pipe.seek(0)
+                data = self.pipe.read(16384)
+                self.pipe.seek(0)
+                return data
+            else:
+                print("Pipe is not initialized.")
+                return None
         except Exception as e:
             print(f"Error sending command: {e}")
             return None
@@ -51,10 +55,10 @@ class Soundpad:
                 cat_dict[cat.attrib["index"]] = cat.attrib["name"]
         return cat_dict
 
-    def category_sounds(self, category_id):
+    def category_sounds(self, category_id) -> dict:
         data = self.send_command(f"GetCategory({category_id},true,false)")
         if not data:
-            return json.dumps([])
+            return {}
         my_xml = data.decode("utf-8")
         my_dict = xmltodict.parse(my_xml)
         sound_dict = {}
