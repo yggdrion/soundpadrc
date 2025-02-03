@@ -1,16 +1,18 @@
+![PyPI - Version](https://img.shields.io/pypi/v/soundpad_control)
+
 # soundpadrc
 
-test2222233dawd
+Python library for controlling [Soundpad](https://www.leppsoft.com/soundpad/en/) via the [Soundpad Remote Control API](https://www.leppsoft.com/soundpad/en/rc/).
 
-## todo
+## Installation
 
-- always tag and push to test.pypi.org
-- force pr, disallow main commit?
-- semver to tag after commit?
-- run action only on tag and not commit?
-- if release generate changelog + push to pypi?
+To install soundpadrc from PyPI:
 
-## example:
+```bash
+pip install soundpadrc
+```
+
+## Example Usage
 
 ```python
 from soundpadrc import Soundpad
@@ -19,22 +21,16 @@ sp = Soundpad()
 
 print(sp.categories())
 
+print(sp.query_sounds("hobbit"))
 ```
 
-```powershell
+## References
 
-git tag -l | ForEach-Object { git tag -d $_ }
-git tag -l | ForEach-Object { git push --delete origin $_ }
+- https://github.com/Ilya-Kokhanovsky/soundpad.py
+- https://www.leppsoft.com/soundpad/files/rc/SoundpadRemoteControl.java
+- https://www.leppsoft.com/soundpad/en/rc/
 
-```
-
-## soundpad links
-
-https://github.com/Ilya-Kokhanovsky/soundpad.py  
-https://www.leppsoft.com/soundpad/files/rc/SoundpadRemoteControl.java  
-https://www.leppsoft.com/soundpad/en/rc/
-
-## python packaging
+## Python packaging
 
 https://packaging.python.org/en/latest/tutorials/packaging-projects/  
 https://github.com/pypa/sampleproject  
