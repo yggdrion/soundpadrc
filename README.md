@@ -1,4 +1,4 @@
-![PyPI - Version](https://img.shields.io/pypi/v/soundpad_control)
+![PyPI - Version](https://img.shields.io/pypi/v/soundpadrc)
 
 # soundpadrc
 
