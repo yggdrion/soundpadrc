@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## v0.18.1 (2025-02-03)
+
+### Bug Fixes
+
+- Add publish
+  ([`c7c11e6`](https://github.com/yggdrion/soundpadrc/commit/c7c11e618f12d1001effdc466899f879465e7cc1))
+
+
+## v0.18.1-rc.4 (2025-02-02)
+
+### Bug Fixes
+
+- No changelog for rc
+  ([`b4b5ba0`](https://github.com/yggdrion/soundpadrc/commit/b4b5ba016a52ad2215b2d0b85fb136afdaba48c9))
+
+
 ## v0.18.1-rc.3 (2025-02-02)
 
 ### Bug Fixes
