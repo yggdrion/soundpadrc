@@ -1,7 +1,9 @@
 name: Tag 🏷️, Build 📦 and Pusblish to test.pypi.org 🐍
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   tag:
@@ -30,7 +32,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           git_committer_name: "github-actions"
           git_committer_email: "actions@users.noreply.github.com"
-          prerelease: true
+          prerelease: false
+          changelog: true
 
   build:
     name: Build distribution 📦
@@ -65,16 +68,16 @@ jobs:
           name: python-package-distributions
           path: dist/
 
-  publish-to-testpypi:
-    name: Publish to TestPyPI 🐍
+  publish-to-pypi:
+    name: >-
+      Publish Python 🐍 distribution 📦 to PyPI
+    if: startsWith(github.ref, 'refs/tags/') # only publish to PyPI on tag pushes
     needs:
       - build
     runs-on: ubuntu-latest
-
     environment:
-      name: testpypi
-      url: https://test.pypi.org/p/soundpadrc
-
+      name: pypi
+      url: https://pypi.org/p/soundpadrc # Replace <package-name> with your PyPI project name
     permissions:
       id-token: write # IMPORTANT: mandatory for trusted publishing
 
@@ -84,8 +87,5 @@ jobs:
         with:
           name: python-package-distributions
           path: dist/
-      - name: Publish distribution 📦 to TestPyPI
+      - name: Publish distribution 📦 to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          verbose: true
-          repository-url: https://test.pypi.org/legacy/
