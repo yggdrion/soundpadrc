@@ -1,6 +1,5 @@
 from xml.etree.ElementTree import fromstring
 import xmltodict
-import json
 import os
 import tempfile
 
