@@ -1,6 +1,63 @@
 # CHANGELOG
 
 
+## v0.19.0 (2025-02-10)
+
+
+## v0.19.0-rc.1 (2025-02-10)
+
+### Build System
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([#5](https://github.com/yggdrion/soundpadrc/pull/5),
+  [`f2489a0`](https://github.com/yggdrion/soundpadrc/commit/f2489a09c0e7e5994ee70ad65a6be227f7a6dc27))
+
+Bumps the github-actions group with 1 update:
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release).
+
+Updates `python-semantic-release/python-semantic-release` from 9.17.0 to 9.18.1 - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/cdfda70b6df73f3e4917cfd498f4bf9fed29ea08...f1e7f858d7951a054daed67880136da814c86969)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+dependency-group: github-actions ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+### Features
+
+- Docs, testfile and returns ([#4](https://github.com/yggdrion/soundpadrc/pull/4),
+  [`c5ac103`](https://github.com/yggdrion/soundpadrc/commit/c5ac103a925b84eebfe48752184fee1012aea3c8))
+
+* fix: testfile
+
+* wip
+
+
+## v0.18.4-rc.2 (2025-02-03)
+
+### Bug Fixes
+
+- Readme.md
+  ([`1977af7`](https://github.com/yggdrion/soundpadrc/commit/1977af780ffed337bef131afc628c593f1604398))
+
+
+## v0.18.4-rc.1 (2025-02-03)
+
+### Bug Fixes
+
+- Smaller errors
+  ([`aa25811`](https://github.com/yggdrion/soundpadrc/commit/aa258118e3c59d7dcd6139bfeff85e839b9237be))
+
+
 ## v0.18.3 (2025-02-03)
 
 
