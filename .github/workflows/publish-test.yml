@@ -31,7 +31,7 @@ jobs:
           git checkout -B ${{ github.ref_name }} ${{ github.sha }}
       - name: Action | Semantic Version Release
         id: release
-        uses: python-semantic-release/python-semantic-release@f1e7f858d7951a054daed67880136da814c86969
+        uses: python-semantic-release/python-semantic-release@0a6013c422396066ede0383ca2c443859397252d
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           git_committer_name: "github-actions"
