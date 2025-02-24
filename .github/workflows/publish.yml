@@ -29,7 +29,7 @@ jobs:
           git checkout -B ${{ github.ref_name }} ${{ github.sha }}
       - name: Action | Semantic Version Release
         id: release
-        uses: python-semantic-release/python-semantic-release@0a6013c422396066ede0383ca2c443859397252d
+        uses: python-semantic-release/python-semantic-release@26bb37cfab71a5a372e3db0f48a6eac57519a4a6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           git_committer_name: "github-actions"
@@ -65,7 +65,7 @@ jobs:
       - name: Build a binary wheel and a source tarball
         run: python3 -m build
       - name: Store the distribution packages
-        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08
+        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
         with:
           name: python-package-distributions
           path: dist/
