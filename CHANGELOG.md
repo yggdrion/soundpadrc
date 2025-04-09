@@ -1,6 +1,154 @@
 # CHANGELOG
 
 
+## v0.19.1 (2025-04-09)
+
+
+## v0.19.1-rc.1 (2025-04-09)
+
+### Bug Fixes
+
+- Remove all sounds exclude
+  ([`e08c194`](https://github.com/yggdrion/soundpadrc/commit/e08c194f59b3111d71bf90dba7ced8c6fffb5dc3))
+
+### Build System
+
+- **deps**: Bump actions/download-artifact in the github-actions group
+  ([#8](https://github.com/yggdrion/soundpadrc/pull/8),
+  [`5b4a824`](https://github.com/yggdrion/soundpadrc/commit/5b4a82451dd303fe5f89cef7c1f5b1ce42d32a0f))
+
+Bumps the github-actions group with 1 update:
+  [actions/download-artifact](https://github.com/actions/download-artifact).
+
+Updates `actions/download-artifact` from 4.1.8 to 4.1.9 - [Release
+  notes](https://github.com/actions/download-artifact/releases) -
+  [Commits](https://github.com/actions/download-artifact/compare/fa0a91b85d4f404e444e00e005971372dc801d16...cc203385981b70ca67e1cc392babf9cc229d5806)
+
+--- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-patch
+
+dependency-group: github-actions ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump actions/setup-python in the github-actions group
+  ([#10](https://github.com/yggdrion/soundpadrc/pull/10),
+  [`f3ded5d`](https://github.com/yggdrion/soundpadrc/commit/f3ded5db1f4c3b61ead5eae34ce0b85baa5a3d56))
+
+Bumps the github-actions group with 1 update:
+  [actions/setup-python](https://github.com/actions/setup-python).
+
+Updates `actions/setup-python` from 5.4.0 to 5.5.0 - [Release
+  notes](https://github.com/actions/setup-python/releases) -
+  [Commits](https://github.com/actions/setup-python/compare/42375524e23c412d93fb67b49958b491fce71c38...8d9ed9ac5c53483de85588cdf95a591a75ab9f55)
+
+--- updated-dependencies: - dependency-name: actions/setup-python dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+dependency-group: github-actions ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([#6](https://github.com/yggdrion/soundpadrc/pull/6),
+  [`e4530ae`](https://github.com/yggdrion/soundpadrc/commit/e4530ae26f4130bb3436d4a1d89c645533600b5c))
+
+Bumps the github-actions group with 1 update:
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release).
+
+Updates `python-semantic-release/python-semantic-release` from 9.18.1 to 9.19.1 - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/f1e7f858d7951a054daed67880136da814c86969...0a6013c422396066ede0383ca2c443859397252d)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+dependency-group: github-actions ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump the github-actions group with 2 updates
+  ([#7](https://github.com/yggdrion/soundpadrc/pull/7),
+  [`934f170`](https://github.com/yggdrion/soundpadrc/commit/934f1706bbb89a6ad34fd106370a517b08a61de2))
+
+Bumps the github-actions group with 2 updates:
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  and [actions/upload-artifact](https://github.com/actions/upload-artifact).
+
+Updates `python-semantic-release/python-semantic-release` from 9.19.1 to 9.21.0 - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/0a6013c422396066ede0383ca2c443859397252d...26bb37cfab71a5a372e3db0f48a6eac57519a4a6)
+
+Updates `actions/upload-artifact` from 4.6.0 to 4.6.1 - [Release
+  notes](https://github.com/actions/upload-artifact/releases) -
+  [Commits](https://github.com/actions/upload-artifact/compare/65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08...4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+dependency-group: github-actions
+
+- dependency-name: actions/upload-artifact dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+dependency-group: github-actions ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump the github-actions group with 2 updates
+  ([#9](https://github.com/yggdrion/soundpadrc/pull/9),
+  [`80fced6`](https://github.com/yggdrion/soundpadrc/commit/80fced6ae0cbe0f4e1dba48bec6c8d71b2f791ce))
+
+Bumps the github-actions group with 2 updates:
+  [actions/upload-artifact](https://github.com/actions/upload-artifact) and
+  [actions/download-artifact](https://github.com/actions/download-artifact).
+
+Updates `actions/upload-artifact` from 4.6.1 to 4.6.2 - [Release
+  notes](https://github.com/actions/upload-artifact/releases) -
+  [Commits](https://github.com/actions/upload-artifact/compare/4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1...ea165f8d65b6e75b540449e92b4886f43607fa02)
+
+Updates `actions/download-artifact` from 4.1.9 to 4.2.1 - [Release
+  notes](https://github.com/actions/download-artifact/releases) -
+  [Commits](https://github.com/actions/download-artifact/compare/cc203385981b70ca67e1cc392babf9cc229d5806...95815c38cf2ff2164869cbab79da8d1f422bc89e)
+
+--- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-patch
+
+dependency-group: github-actions
+
+- dependency-name: actions/download-artifact dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+dependency-group: github-actions ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+
 ## v0.19.0 (2025-02-10)
 
 
