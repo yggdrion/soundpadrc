@@ -70,8 +70,7 @@ class Soundpad:
         category_dict = {}
         xml_data = fromstring(data)
         for cat in xml_data:
-            if "All sounds" not in cat.attrib["name"]:
-                category_dict[cat.attrib["index"]] = cat.attrib["name"]
+            category_dict[cat.attrib["index"]] = cat.attrib["name"]
         return category_dict
 
     def category_sounds(self, category_id) -> dict[str, str]:
