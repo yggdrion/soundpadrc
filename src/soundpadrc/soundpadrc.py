@@ -84,7 +84,7 @@ class Soundpad:
         if not data:
             return {}
         xml_data = data.decode("utf-8")
-        xml_dict = xmltodict.parse(xml_data)
+        xml_dict = xmltodict.parse(xml_data, force_list={"Sound"})
         sounds = {}
         for sound in xml_dict["Categories"]["Category"]["Sound"]:
             sounds[sound["@index"]] = sound["@title"]
