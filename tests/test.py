@@ -1,12 +1,17 @@
 import sys
+import time
 
 sys.path.insert(0, "..")
 from src.soundpadrc import Soundpad
 
 sp = Soundpad()
 
-print(sp.categories())
+while True:
+    try:
+        print(sp.categories())
+        # print(sp.query_sounds("hobbit"))
+        # print(sp.get_all_sounds())
+    except Exception as e:
+        print(f"Error: {e}")
 
-print(sp.query_sounds("hobbit"))
-
-print(sp.get_all_sounds())
+    time.sleep(3)
